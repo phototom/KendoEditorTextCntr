@@ -7,7 +7,7 @@
     <link href="http://cdn.kendostatic.com/2013.3.1119/styles/kendo.blueopal.min.css" rel="stylesheet" />
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://cdn.kendostatic.com/2013.3.1119/js/kendo.all.min.js"></script>
-    <script src="kendo.editortextcounter.js"></script>
+    <script src="kendo.EditorTextCounter.js"></script>
 </head>
 
 
@@ -161,18 +161,18 @@
             $("#Textarea1").kendoEditor();
 
 
-            $('#Span1').kendoEditorTextCounter({
+            $('#Span1').kendoextEditorTextCounter({
                 textAreaName: '#editor'
             });
 
             // testing maxlengh option
-            $('#Span2').kendoEditorTextCounter({
+            $('#Span2').kendoextEditorTextCounter({
                 textAreaName: '#editor',
                 maxlength: 1200
             });
 
             // testing alternate template
-            $('#Span3').kendoEditorTextCounter({
+            $('#Span3').kendoextEditorTextCounter({
                 textAreaName: '#editor',
                 maxlength: 1200,
                 showNofMFmt: true
@@ -180,36 +180,36 @@
 
 
             // testing adding .k-textCounterWarning css class
-            $('#Span4').kendoEditorTextCounter({
+            $('#Span4').kendoextEditorTextCounter({
                 textAreaName: '#editor',
                 maxlength: 1100
             });
 
             // testing warningPercentage
-            $('#Span5').kendoEditorTextCounter({
+            $('#Span5').kendoextEditorTextCounter({
                 textAreaName: '#editor',
                 maxlength: 1200,
                 warningPercentage: 80
             });
 
             // check for maxlength attribute on textarea 
-            $('#Span6').kendoEditorTextCounter({
+            $('#Span6').kendoextEditorTextCounter({
                 textAreaName: '#Textarea1'
             });
             // check for maxlength attribute on textarea 
-            $('#Span7').kendoEditorTextCounter({
+            $('#Span7').kendoextEditorTextCounter({
                 textAreaName: '#Textarea1',
                 maxLengthAttribute: "data-bind-length"
             });
 
             // check alternate css class
-            $('#Span8').kendoEditorTextCounter({
+            $('#Span8').kendoextEditorTextCounter({
                 textAreaName: '#Textarea1',
                 warningCssClass: "alt-textCounterWarning"
             });
 
             // alternate template
-            $('#Span9').kendoEditorTextCounter({
+            $('#Span9').kendoextEditorTextCounter({
                 textAreaName: '#Textarea1',
                 template: '#=  numberChars # characters used of  #= maxLength  #, Remaining Chars #= remainingChars #'
             });

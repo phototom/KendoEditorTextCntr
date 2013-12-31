@@ -6,7 +6,7 @@
         ui = kendo.ui,
         Widget = ui.Widget;
 
-    var EditorTextCounter = Widget.extend({
+    var extEditorTextCounter = Widget.extend({
 
         init: function (element, options) {
             var that = this;
@@ -77,7 +77,7 @@
 
         },
         options: {
-            name: 'EditorTextCounter',
+            name: 'extEditorTextCounter',
             textAreaName: '',
             maxlength: 0,
             maxLengthAttribute: 'maxlength',
@@ -89,6 +89,6 @@
         }
     });
 
-    ui.plugin(EditorTextCounter);
+    ui.plugin(extEditorTextCounter);
 })(jQuery);
 
