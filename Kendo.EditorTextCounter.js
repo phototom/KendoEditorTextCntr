@@ -1,5 +1,7 @@
-﻿/// <version>2013.04.14</version>
-/// <summary>Works with the Kendo UI 2013 Q1 and jQuery 1.9.1</summary>
+﻿/// <version>1.0</version>
+/// <summary>
+//      Copyright 2014 - tomthorp@mail.com
+/// Works with the Kendo UI 2013 Q1 and jQuery 1.9.1</summary>
 
 (function ($, undefined) {
     var kendo = window.kendo,
