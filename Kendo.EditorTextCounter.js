@@ -12,13 +12,12 @@
 
         init: function (element, options) {
             var that = this;
-            var temp;
-            var targetDomElement = $(element);  // needed a closure variable in updateDisplay()
+            var temp;rupdateDisplay()
 
             Widget.fn.init.call(that, element, options);
             options = that.options;
 
-            if (!options.textAreaName || options.textAreaName.trim().length == 0) {
+            if (!options.textAreaName || options.textAreaName.length == 0) {
                 throw 'Undefined TextArea Name Options Parameter';
             }
 
@@ -33,7 +32,7 @@
                     temp = textArea.attr('maxlength');
                 }
                 if (temp) {
-                    options.maxlength = parseInt(temp.trim());
+                    options.maxlength = parseInt(temp);
                 }
             }
 
