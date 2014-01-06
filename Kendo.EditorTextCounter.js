@@ -12,8 +12,8 @@
 
         init: function (element, options) {
             var that = this;
-            var temp;rupdateDisplay()
-
+            var temp;
+            
             Widget.fn.init.call(that, element, options);
             options = that.options;
 
